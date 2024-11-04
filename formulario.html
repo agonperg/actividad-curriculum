@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Curriculum</title>
+</head>
+<body>
+
+    <form action="proceso.php" method="post">
+
+
+    <fieldset>
+        <legend>Datos personales</legend>
+            <p>Nombre: <input type="text" required></p>
+            <p>Apellidos: <input type="text"></p>
+            <p>Edad: <input type="number" min="0"></p>
+            <p>Género</p>
+            <p>
+                <input type="radio" name="sexo" value="H">Hombre
+                <input type="radio" name="sexo" value="M">Mujer
+            </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Contacto</legend>
+            <p>Correo Electrónico: <input type="text"></p>
+            <p>Codigo Postal: <input type="number"></p>
+            <p>Dirección: <input type="text"></p>
+            <p>Ciudad: 
+                <select  size="1">
+                    <option value="1">Jaén</option>
+                    <option value="2">Granada</option>
+                    <option value="3">Córdoba</option>
+                </select>
+            </p>
+            <p>Contraseña: <input type="password" name="Contraseña"></p>
+            
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Datos de Interés</legend>
+            <p>Estado Civil:</p>
+            <input type="radio" name="estado civil" value="Casado"> Casado
+            <input type="radio" name="estado civil" value="No Casado">No Casado
+            <p>Hobbies</p>
+            <input type="checkbox" name="Hobbies"> Deporte
+            <br>
+            <input type="checkbox" name="Hobbies"> Cine
+            <br>
+            <input type="checkbox" name="Hobbies"> Lectura
+            <br>
+            <input type="checkbox" name="Hobbies"> Correr
+                
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Comentarios adicionales</legend>
+        <p>Escriba aquí tus Comentarios</p>
+        <textarea name="Comentario" rows="4" cols="27" placeholder="Escribe tus comentarios aquí..."></textarea>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Resetear">
+
+    </form>
+</body>
+</html>
